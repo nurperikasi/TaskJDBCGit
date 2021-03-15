@@ -41,6 +41,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -147,7 +148,8 @@
     <MESSAGE value="закрыла потоки" />
     <MESSAGE value="закрыла connection" />
     <MESSAGE value="15/03" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/03" />
+    <MESSAGE value="15.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="15.03" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1615639921350">
