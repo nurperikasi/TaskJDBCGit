@@ -13,7 +13,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void createUsersTable() {
-        String SQL = "CREATE TABLE users1 " +
+        String SQL = "CREATE TABLE IF NOT EXISTS users1 " +
                 "(id INTEGER not NULL AUTO_INCREMENT, " +
                 " name VARCHAR(50), " +
                 " lastName VARCHAR (50), " +
@@ -22,8 +22,6 @@ public class UserDaoJDBCImpl implements UserDao {
         try (PreparedStatement preparedStatement = Util.getConnection()
                 .prepareStatement(SQL)) {
             preparedStatement.execute();
-        } catch (SQLSyntaxErrorException ignored) { /* Я ловлю ее чтобы он игнорил
-        исключения, которое бросает если такая таблица уже существует*/
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -31,9 +29,8 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void dropUsersTable() {
         try (PreparedStatement preparedstatement = Util.getConnection()
-                .prepareStatement("DROP TABLE users1")) {
+                .prepareStatement("DROP TABLE IF EXISTS users1")) {
             preparedstatement.execute();
-        } catch (SQLSyntaxErrorException ignored) {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -51,9 +48,8 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void removeUserById(long id) {
         try (PreparedStatement preparedStatement = Util.getConnection()
-                .prepareStatement("DELETE FROM users1 WHERE id = " + id)) {
+                .prepareStatement("DELETE FROM IF EXISTS users1 WHERE id = " + id)) {
             preparedStatement.execute();
-        } catch (SQLSyntaxErrorException ignored) {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -80,7 +76,6 @@ public class UserDaoJDBCImpl implements UserDao {
         try (PreparedStatement preparedStatement = Util.getConnection()
                 .prepareStatement("TRUNCATE TABLE users1 ")) {
             preparedStatement.execute();
-        } catch (SQLSyntaxErrorException ignored) {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

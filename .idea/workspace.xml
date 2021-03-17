@@ -36,11 +36,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a6ed9cd-1bb0-4626-a37d-15984f08e500" name="Default Changelist" comment="16/03">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskJDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TaskJDBC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +57,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="hibernate-configuration-5.0" />
+        <option value="hibernate-main-5.0" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -74,12 +91,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="settings.editor.splitter.proportion" value="0.24032587" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -95,6 +120,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskJDBC" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest" />
       </list>
@@ -121,6 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615411925461</updated>
+      <workItem from="1615977266861" duration="4460000" />
     </task>
     <task id="LOCAL-00001" summary="закрыла connection">
       <created>1615713307172</created>
@@ -166,6 +203,9 @@
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -213,99 +253,5 @@
     <MESSAGE value="15/03" />
     <MESSAGE value="16/03" />
     <option name="LAST_COMMIT_MESSAGE" value="16/03" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="163" y="0" key="#Project_Structure" timestamp="1615639921350">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1615639921350" />
-    <state x="137" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615467626216">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="137" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1615467626216" />
-    <state x="414" y="51" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1615658324576">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="414" y="51" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1615658324576" />
-    <state x="413" y="109" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1615884205067">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="109" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1615884205067" />
-    <state x="533" y="243" width="300" height="243" key="DBNavigator.ConnectionAuthenticationDialog" timestamp="1615651305079">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="533" y="243" width="300" height="243" key="DBNavigator.ConnectionAuthenticationDialog/0.0.1366.728@0.0.1366.728" timestamp="1615651305079" />
-    <state x="213" y="17" key="DBNavigator.ProjectSettingsDialog" timestamp="1615651309242">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="213" y="17" key="DBNavigator.ProjectSettingsDialog/0.0.1366.728@0.0.1366.728" timestamp="1615651309242" />
-    <state x="92" y="0" width="1182" height="728" key="DiffContextDialog" timestamp="1615876074774">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="0" width="1182" height="728" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1615876074774" />
-    <state x="463" y="104" key="FileChooserDialogImpl" timestamp="1615658500368">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="104" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615658500368" />
-    <state width="391" height="272" key="Git.Branch.Popup" timestamp="1615885983406">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="391" height="272" key="Git.Branch.Popup/0.0.1366.728@0.0.1366.728" timestamp="1615885983406" />
-    <state x="561" y="259" key="Github.ShareDialog" timestamp="1615835915458">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="561" y="259" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1615835915458" />
-    <state width="1322" height="217" key="GridCell.Tab.0.bottom" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state width="1322" height="217" key="GridCell.Tab.0.center" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state width="1322" height="217" key="GridCell.Tab.0.left" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state width="1322" height="217" key="GridCell.Tab.0.right" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state width="1322" height="217" key="GridCell.Tab.1.center" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state width="1322" height="217" key="GridCell.Tab.1.left" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state width="1322" height="217" key="GridCell.Tab.1.right" timestamp="1615967264443">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1615967264443" />
-    <state x="213" y="17" key="Maven.ArtifactSearchDialog" timestamp="1615877987617">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="213" y="17" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1615877987617" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1615878857687">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1615878857687" />
-    <state x="569" y="277" key="VCS.EditChangelistDialog" timestamp="1615874785820">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="569" y="277" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1615874785820" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1615881142267">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1615881142267" />
-    <state x="65" y="0" key="new project wizard" timestamp="1615622092480">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1615622092480" />
   </component>
 </project>
