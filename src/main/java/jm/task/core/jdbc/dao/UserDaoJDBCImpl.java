@@ -13,22 +13,26 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void createUsersTable() {
-        try (Statement statement = Util.getConnection().createStatement()) {
-            statement.executeUpdate("CREATE TABLE users1 " +
-                    "(id INTEGER not NULL AUTO_INCREMENT, " +
-                    " name VARCHAR(50), " +
-                    " lastName VARCHAR (50), " +
-                    " age INTEGER not NULL, " +
-                    " PRIMARY KEY (id))");
-        } catch (SQLSyntaxErrorException ignored) {
+        String SQL = "CREATE TABLE users1 " +
+                "(id INTEGER not NULL AUTO_INCREMENT, " +
+                " name VARCHAR(50), " +
+                " lastName VARCHAR (50), " +
+                " age INTEGER not NULL, " +
+                " PRIMARY KEY (id))";
+        try (PreparedStatement preparedStatement = Util.getConnection()
+                .prepareStatement(SQL)) {
+            preparedStatement.execute();
+        } catch (SQLSyntaxErrorException ignored) { /* Я ловлю ее чтобы он игнорил
+        исключения, которое бросает если такая таблица уже существует*/
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }
 
     public void dropUsersTable() {
-        try (Statement statement = Util.getConnection().createStatement()) {
-            statement.executeUpdate("DROP TABLE users1");
+        try (PreparedStatement preparedstatement = Util.getConnection()
+                .prepareStatement("DROP TABLE users1")) {
+            preparedstatement.execute();
         } catch (SQLSyntaxErrorException ignored) {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -36,17 +40,19 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void saveUser(String name, String lastName, byte age) {
-        try (Statement statement = Util.getConnection().createStatement()) {
-            statement.executeUpdate("INSERT INTO users1 (name, lastName, age)" +
-                    " VALUES ('" + name + "','" + lastName + "','" + age + "') ");
+        try (PreparedStatement preparedStatement = Util.getConnection()
+                .prepareStatement("INSERT INTO users1 (name, lastName, age)" +
+                        " VALUES ('" + name + "','" + lastName + "','" + age + "') ")) {
+            preparedStatement.execute();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }
 
     public void removeUserById(long id) {
-        try (Statement statement = Util.getConnection().createStatement()) {
-            statement.executeUpdate("DELETE FROM users1 WHERE id = " + id);
+        try (PreparedStatement preparedStatement = Util.getConnection()
+                .prepareStatement("DELETE FROM users1 WHERE id = " + id)) {
+            preparedStatement.execute();
         } catch (SQLSyntaxErrorException ignored) {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -55,8 +61,9 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public List<User> getAllUsers() {
         List<User> list = new ArrayList<>();
-        try (Statement statement = Util.getConnection().createStatement();
-             ResultSet resultSet = statement.executeQuery("SELECT * FROM users1 ")) {
+        try (PreparedStatement preparedStatement = Util.getConnection()
+                .prepareStatement("SELECT * FROM users1 ");
+             ResultSet resultSet = preparedStatement.executeQuery()) {
             while (resultSet.next()) {
                 list.add(new User(
                         resultSet.getString("name"),
@@ -70,8 +77,9 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void cleanUsersTable() {
-        try (Statement statement = Util.getConnection().createStatement()) {
-            statement.executeUpdate("TRUNCATE TABLE users1 ");
+        try (PreparedStatement preparedStatement = Util.getConnection()
+                .prepareStatement("TRUNCATE TABLE users1 ")) {
+            preparedStatement.execute();
         } catch (SQLSyntaxErrorException ignored) {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
