@@ -151,7 +151,7 @@
       <updated>1615411925461</updated>
       <workItem from="1615977266861" duration="13391000" />
       <workItem from="1616004073137" duration="11499000" />
-      <workItem from="1616056278315" duration="11636000" />
+      <workItem from="1616056278315" duration="11961000" />
     </task>
     <task id="LOCAL-00001" summary="закрыла connection">
       <created>1615713307172</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616070099056</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="18/03&#10;задача 1.1.4">
+      <created>1616072232644</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616072232644</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
