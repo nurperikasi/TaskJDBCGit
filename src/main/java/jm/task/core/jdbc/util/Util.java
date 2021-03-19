@@ -1,6 +1,7 @@
 package jm.task.core.jdbc.util;
 
 import jm.task.core.jdbc.model.User;
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -66,7 +67,7 @@ public class Util {
 
             try {
                 sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-            } catch (Throwable tr) {
+            } catch (HibernateException tr) {
                 System.out.printf("session isn't opened");
                 tr.printStackTrace();
             }
