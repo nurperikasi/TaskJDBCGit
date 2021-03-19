@@ -37,11 +37,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2a6ed9cd-1bb0-4626-a37d-15984f08e500" name="Default Changelist" comment="18/03&#10;задача 1.1.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +144,8 @@
       <workItem from="1616004073137" duration="11499000" />
       <workItem from="1616056278315" duration="11961000" />
       <workItem from="1616098632646" duration="5869000" />
-      <workItem from="1616145554933" duration="820000" />
+      <workItem from="1616145554933" duration="1459000" />
+      <workItem from="1616155272185" duration="488000" />
     </task>
     <task id="LOCAL-00001" summary="закрыла connection">
       <created>1615713307172</created>
@@ -226,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616104472294</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="19/03&#10;changed SesionFactory">
+      <created>1616147809674</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616147809674</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +284,8 @@
     <MESSAGE value="16/03" />
     <MESSAGE value="17/03" />
     <MESSAGE value="18/03&#10;задача 1.1.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="18/03&#10;задача 1.1.4" />
+    <MESSAGE value="19/03&#10;changed SesionFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/03&#10;changed SesionFactory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

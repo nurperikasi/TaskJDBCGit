@@ -20,10 +20,12 @@ import java.util.logging.LogManager;
 
 public class Util {
     // реализуйте настройку соеденения с БД
-    private  static Util instance;
-    private Util() {}
+    private static Util instance;
 
-    public static Util getInstance() {
+    private Util() {
+    }
+
+    public static Util getUtil() {
         if (instance == null) {
             instance = new Util();
         }
@@ -34,9 +36,9 @@ public class Util {
     private static final String USER = "root1";
     private static final String PASSWORD = "root1";
 
+    private static Connection connection = null;
 
-    public static Connection getConnection() {
-        Connection connection = null;
+    public Connection getConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException throwables) {
@@ -48,7 +50,7 @@ public class Util {
 
     private static SessionFactory sessionFactory;
 
-    public static SessionFactory getSession() {
+    public SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             Configuration configuration = new Configuration();
             Properties settings = new Properties();
